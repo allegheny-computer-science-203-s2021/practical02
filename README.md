@@ -298,8 +298,8 @@ your own private repository.
 ## Reporting Problems
 
 If you have found a problem with this assignment's provided source code, then
-you can go to the [Computer Science 203 Practical 1
-Starter](https://github.com/allegheny-computer-science-203-s2021/practical02-solution)
+you can go to the [Computer Science 203 Practical 2
+Starter](https://github.com/allegheny-computer-science-203-s2021/practical02)
 repository and create an issue by clicking the "Issues" tab and then clicking
 the green "New Issue" button. If you have found a problem with the [GatorGrader
 tool](https://github.com/GatorEducator/gatorgrader) and the way that it checks
