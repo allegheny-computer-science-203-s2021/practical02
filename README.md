@@ -67,6 +67,17 @@ This assignment assumes that you have correct and working Docker, Git, Pipenv, a
 
 Study  the  provided  source  code  and  the  technical  documentation  to  understand  the  type  of output  that  your  program  should  produce.   At  the  outset,  you  should  notice  that  the  provided source code does not contain all of the [source code](https://github.com/crista/exercises-in-programming-style/blob/master/05-cookbook/tf-05.py) from the "Exercises in Programming Style" book.  You will need to  add  in  the  appropriate  source  code  and  documentation  to  ensure  that  the  Python  program passes all of the GatorGrader checks and produces the correct output.  Please remember that, when you start this practical assignment, the provided Python source code will both not pass the linting checks and  not  produce  the  correct  output.   As  you  are  adding  the  required  code,  you  should  also  run the Pytest test suite that currently contains one test. Following the strategy of this test and the documentation for the functions in the program, please add at least two more tests to establish a confidence in the correctness of the cookbook-style program. If you have already installed Pipenv and the project's development dependencies, you can run the tests by typing `pipenv run test`.
 
+A summary of the tasks to be completed in this practical is below:
+
+1. Study the `compute_tf_cookbook` program, comparing its style of `monolith` program from practical 1.
+2. Add missing Python code to the end of the `compute_tf_cookbook.py`. Make sure the program produces desired output as shown in the [Output](#output) section below.
+3. Using the command given in the [Using Pyenv and Pipenv](#using-pyenv-and-pipenv) section below, reformat the program using [black](https://black.readthedocs.io/en/stable/).
+4. Using the commands given in the [Using Pyenv and Pipenv](#using-pyenv-and-pipenv) section below, run linting tools and fix the program to ensure these tools pass. 
+5. Investigate the meaning of the `disable` commands provided in the program using [pylint documentation](https://docs.pylint.org/en/1.6.0/features.html) and other online resources. 
+6. Add two more test cases with `assert` statements using [pytest](https://docs.pytest.org/en/2.0.3/assert.html) in `tests/test_compute_tf_cookbook.py`.
+7. Complete the `reflection.md` document.
+8. Ensure that all GatorGrader checks pass.
+
 ## System Commands
 
 This project invites students to enter system commands into a terminal window. This assignment uses [Docker](https://www.docker.com) to deliver programs, such as `gradle` and the source code and packages needed to run [GatorGrader](https://github.com/GatorEducator/gatorgrader), to a students' computer, thereby eliminating the need for a programmer to install them on their development workstation. Along with using Docker for automated grading and
@@ -132,7 +143,12 @@ Assuming that you will use [Pyenv](https://github.com/pyenv/pyenv) to download
 and manage your installation of Python, this practical assignment also invites
 you to use [Pipenv](https://github.com/pypa/pipenv) to create a virtual
 environment, install and manage development packages, and to run Python
-commands. Here is a sample of the Pipenv commands that you will need to run
+commands. Previously, you should have run the following commands:
+
+- Install and upgrade the `pipenv` command: `pip install pipenv --user` or `sudo -H pip install -U pipenv` (note, if you have both Python2 and Python3, you may need to use `pip3` command instead of `pip`)
+- Install the development dependencies: `pipenv` command: `pipenv install --dev`
+
+Here is a sample of the Pipenv commands that you will need to run
 during this assignment.
 
 - Reformat the program with `black`: `pipenv run black termfrequency/compute_tf_cookbook.py`
@@ -211,6 +227,7 @@ your submission must pass the following checks that
 [GatorGrader](https://github.com/GatorEducator/gatorgrader) automatically
 assesses:
 
+```
 ✔  The reflection.md in writing has at least 400 word(s) in total
 ✔  The test_compute_tf_cookbook.py in tests has at least 3 multiple-line Python comment(s)
 ✔  The reflection.md in writing has exactly 2 of the 'list' tag
@@ -241,6 +258,8 @@ assesses:
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 	┃ Passed 26/26 (100%) of checks for cmpsc-203-spring-2021-practical2! ┃
 	┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+```
+	
 If [GatorGrader's](https://github.com/GatorEducator/gatorgrader) automated
 checks pass correctly, the tool will produce the output like the one above.
 

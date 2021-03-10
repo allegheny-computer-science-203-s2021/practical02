@@ -11,6 +11,7 @@ termfrequency:
             ConfirmFileExists
             CountMultipleLineComments --language Python --count 7
             CountSingleLineComments --language Python --count 14
+            MatchFileFragment --fragment "import string" --count 1 --exact
             MatchFileFragment --fragment "TODO" --count 0 --exact
             MatchFileFragment --fragment "with open" --count 1
             MatchFileFragment --fragment "global data" --count 3
